@@ -61,19 +61,19 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: ./api/handler.hello
     events:
       - http:
           path: users/hello
           method: get
   patients:
-    handler: handler.patients
+    handler: ./api/handler.patients
     events:
       - http:
           path: api/patient/all
           method: get
   doctors:
-    handler: handler.doctors
+    handler: ./api/handler.doctors
     events:
       - http:
           path: api/doctor/all

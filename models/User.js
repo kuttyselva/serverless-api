@@ -1,4 +1,4 @@
-const sequelize = require("../models/Db");
+const sequelize = require("../config/Db");
 const Role = sequelize.import("../models/Role");
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
